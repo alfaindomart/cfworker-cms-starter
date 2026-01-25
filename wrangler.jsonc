@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cfworker-cms-starter",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "compatibility_date": "2025-08-03",
+  "main": "./src/index.tsx",
+  "observability": {
+    "enabled": true
+  },
+  // "d1_databases": [
+  //   {
+  //     "binding": "DB",
+  //     "database_name": "cfworker-cms-db",
+  //     "database_id": "63a0cf97-6ccd-46ed-ab83-af469f234369",
+  //     "migrations_dir": "./drizzle/migrations"
+  //   }
+  // ]
+}
