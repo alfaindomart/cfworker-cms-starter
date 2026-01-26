@@ -3,15 +3,15 @@ import { logger } from "hono/logger";
 import { renderer } from "./renderer";
 import { log } from "console";
 
-type Bindings = {
-  DB: D1Database;
-};
+// type Bindings = {
+//   DB: D1Database;
+// };
 
-const app = new Hono<{ Bindings: Bindings }>();
+const app = new Hono();
 
 app.use(logger());
 
-app.use(renderer);
+// app.use(renderer);
 
 app.get("/", (c) => {
   console.log("halo");

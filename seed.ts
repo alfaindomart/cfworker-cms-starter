@@ -1,0 +1,41 @@
+import {seed} from 'drizzle-seed'
+import {drizzle} from 'drizzle-orm/postgres-js'
+import { config } from 'dotenv';
+import postgres from 'postgres';
+import * as schema from './src/db/schema'
+
+seedDatabase()
+
+async function seedDatabase() {
+  try {
+    if (process.env.ENVIRONMENT === "production") {
+      config({ path: "./.prod.vars" });
+    } else {
+      config({ path: "./.dev.vars" });
+    }
+
+    const DATABASE_URL = process.env.DATABASE_URL;
+    if (!DATABASE_URL) {
+      throw new Error("Missing Environment Variable: DATABASE_URL");
+    }
+
+    const TEST_DATABASE_URL = process.env.TEST_DATABASE_URL;
+    if (!TEST_DATABASE_URL) {
+      throw new Error("Missing Environment Variable: TEST_DATABASE_URL");
+    }
+
+    const sql = postgres(TEST_DATABASE_URL);
+    const db = drizzle(sql, {
+      casing: "snake_case",
+    });
+
+    // Read more about seeding here: https://orm.drizzle.team/docs/seed-overview#drizzle-seed
+    await seed(db, schema);
+    console.log("✅ Database seeded successfully!");
+  } catch (error) {
+    console.error("❌ Error during seeding:", error);
+    process.exit(1);
+  } finally {
+    process.exit(0);
+  }
+}
