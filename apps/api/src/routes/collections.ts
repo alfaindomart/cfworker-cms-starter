@@ -3,7 +3,7 @@ import * as schemaValidator from "../dtos/index"
 import z from "zod";
 import {zValidator} from "@hono/zod-validator";
 import { dbProvider } from "../middleware/dbProvider";
-import * as schema from '../db/schema'
+import * as schema from '../../../../db/drizzle/schema/schema'
 
 const app = new Hono()
 

@@ -2,7 +2,7 @@ import {seed} from 'drizzle-seed'
 import {drizzle} from 'drizzle-orm/postgres-js'
 import { config } from 'dotenv';
 import postgres from 'postgres';
-import * as schema from './src/db/schema'
+import * as schema from './drizzle/schema/schema'
 
 seedDatabase()
 

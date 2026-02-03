@@ -1,4 +1,4 @@
-import * as schema from '../db/schema'
+import * as schema from '../../../../db/drizzle/schema/schema'
 import { createInsertSchema, createSelectSchema, createUpdateSchema } from "drizzle-zod";
 import {z} from 'zod'
 

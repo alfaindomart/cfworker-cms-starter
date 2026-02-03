@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { logger } from "hono/logger";
-import { renderer } from "./renderer";
+import { renderer } from "../renderer";
 import { log } from "console";
 import collections from "./routes/collections";
 import { dbProvider } from "./middleware/dbProvider";
