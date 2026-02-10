@@ -9,11 +9,26 @@
   "observability": {
     "enabled": true
   },
+  // [ENV:PRODUCTION]
+  // Command: bun wrangler deploy
+  "vars": {
+    "ENVIRONMENT": "production",
+    "APP_NAME": "api-prod",
+    // "APP_ORIGIN": "https://example.com",
+    // "ALLOWED_ORIGINS": "https://example.com",
+    // "RESEND_EMAIL_FROM": "onboarding@resend.dev"
+  },
+  // prettier-ignore
+  "hyperdrive": [
+    { "binding": "HYPERDRIVE_CACHED", "id": "bf0c326b9c0c43cda417f552469ac67d" },
+    { "binding": "HYPERDRIVE_DIRECT", "id": "3be9497ddcdb4102acf1a2aeac258e03" }
+  ],
+  "kv_namespaces": [],
   "env": {
     "dev": {
       "vars": {
         "ENVIRONMENT": "development",
-        "APP_NAME": "api",
+        "APP_NAME": "api-dev",
         "APP_ORIGIN": "http://localhost:5173",
         "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173"
       },

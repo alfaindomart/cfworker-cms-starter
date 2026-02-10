@@ -3,9 +3,9 @@ import { logger } from "hono/logger";
 import { renderer } from "../renderer";
 import { log } from "console";
 import collections from "./routes/collections";
-import { dbProvider } from "./middleware/dbProvider";
+import { dbProvider } from "./lib/dbProvider";
 import { auth } from "./utils/auth";
-import { errorHandler, notFoundHandler } from "./middleware/errorHandler";
+import { errorHandler, notFoundHandler } from "./lib/errorHandler";
 
 // type Bindings = {
 //   DB: D1Database;

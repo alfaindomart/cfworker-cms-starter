@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import * as schemaValidator from "../dtos/index"
 import z from "zod";
 import {zValidator} from "@hono/zod-validator";
-import { dbProvider } from "../middleware/dbProvider";
+import { dbProvider } from "../lib/dbProvider";
 import * as schema from '@cms/db/drizzle/schema/schema'
 
 const app = new Hono()
