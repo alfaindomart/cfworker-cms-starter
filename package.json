@@ -6,13 +6,13 @@
     "db"
   ],
   "scripts": {
-    "dev": "vite",
+    "dev:api": "npm run dev --workspace=@cms/api",
     "build": "vite build",
     "preview": "$npm_execpath run build && vite preview",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "npm run db:generate --workspace=@cms/db",
+    "db:migrate": "npm run db:migrate --workspace=@cms/db",
     "deploy": "$npm_execpath run build && wrangler deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen:api": "npm run cf-typegen --workspace=@cms/api"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.2.3",

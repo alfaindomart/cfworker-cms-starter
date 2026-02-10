@@ -4,7 +4,7 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
 export const auth = (env: CloudflareBindings): ReturnType<typeof betterAuth> => {
-    const client = postgres(env.TEST_DATABASE_URL);
+    const client = postgres(env.CloudflareBindings);
     const db = drizzle(client)
 
     return betterAuth({

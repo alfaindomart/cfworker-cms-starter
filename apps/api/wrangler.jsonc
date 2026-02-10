@@ -1,5 +1,5 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  "$schema": "../../node_modules/wrangler/config-schema.json",
   "name": "cfworker-cms-starter",
   "compatibility_flags": [
     "nodejs_compat"
@@ -9,6 +9,22 @@
   "observability": {
     "enabled": true
   },
+  "env": {
+    "dev": {
+      "vars": {
+        "ENVIRONMENT": "development",
+        "APP_NAME": "api",
+        "APP_ORIGIN": "http://localhost:5173",
+        "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173"
+      },
+      // prettier-ignore
+      "hyperdrive": [
+        { "binding": "HYPERDRIVE_CACHED", "id": "281c1ee9219742f7ad3a72b4b6f62f9d" },
+        { "binding": "HYPERDRIVE_DIRECT", "id": "72eb2ad395054ead9b13e9e22d78a917" }
+      ],
+      "kv_namespaces": []
+      }
+  }
   // "d1_databases": [
   //   {
   //     "binding": "DB",

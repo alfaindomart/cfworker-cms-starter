@@ -2,9 +2,9 @@ import {config} from 'dotenv';
 import { defineConfig } from 'drizzle-kit';
 
 if (process.env.ENVIRONMENT === "production") {
-  config({ path: "./.prod.vars" });
+  config({ path: "../.prod.vars" });
 } else {
-  config({ path: "./.dev.vars" });
+  config({ path: "../.dev.vars" });
 }
 
 const DATABASE_URL = process.env.DATABASE_URL;
@@ -18,7 +18,7 @@ if (!TEST_DATABASE_URL) {
 }
 
 export default defineConfig({
-    schema: './src/db/schema.ts',
+    schema: './drizzle/schema/schema.ts',
     out: './drizzle',
     dialect: 'postgresql',
     casing: 'snake_case',
