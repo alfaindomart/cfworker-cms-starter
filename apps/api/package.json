@@ -2,13 +2,13 @@
   "name": "@cms/api",
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev src/index.tsx",
+    "dev": "wrangler dev worker-dev.ts --remote --env dev",
     "build": "vite build",
     "preview": "$npm_execpath run build && vite preview",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "deploy": "$npm_execpath run build && wrangler deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.6",

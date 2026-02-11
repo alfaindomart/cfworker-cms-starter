@@ -4,8 +4,8 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "compatibility_date": "2025-08-03",
-  "main": "./src/index.tsx",
+  "compatibility_date": "2026-02-11",
+  "main": "./worker.ts",
   "observability": {
     "enabled": true
   },
@@ -35,7 +35,7 @@
       // prettier-ignore
       "hyperdrive": [
         { "binding": "HYPERDRIVE_CACHED", "id": "281c1ee9219742f7ad3a72b4b6f62f9d" },
-        { "binding": "HYPERDRIVE_DIRECT", "id": "72eb2ad395054ead9b13e9e22d78a917" }
+        { "binding": "HYPERDRIVE_DIRECT", "id": "72eb2ad395054ead9b13e9e22d78a917" },
       ],
       "kv_namespaces": []
       }

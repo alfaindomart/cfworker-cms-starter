@@ -2,17 +2,23 @@ import { Hono } from "hono";
 import * as schemaValidator from "../dtos/index"
 import z from "zod";
 import {zValidator} from "@hono/zod-validator";
-import { dbProvider } from "../lib/dbProvider";
+import { createDb } from "../lib/dbProvider";
 import * as schema from '@cms/db/drizzle/schema/schema'
+import type { Env } from "../lib/env";
 
-const app = new Hono()
+type CloudflareBindings = {
+ HYPERDRIVE_CACHED: Hyperdrive;
+  HYPERDRIVE_DIRECT: Hyperdrive;
+} & Env
 
-.use("*", dbProvider)
+const app = new Hono<{
+    Bindings: CloudflareBindings
+}>()
 
 .get("/all", async (c) => {
     console.log('getting database')
     console.log(c)
-    const db = c.var.db
+    const db = createDb(c.env.HYPERDRIVE_DIRECT)
     console.log('db established')
     console.log(c.var)
     const query = await db.select().from(schema.collections)

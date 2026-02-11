@@ -1,7 +1,5 @@
-import { createMiddleware } from "hono/factory";
-import { type PostgresJsDatabase, drizzle } from "drizzle-orm/postgres-js";
+import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import { sql } from "drizzle-orm";
 import * as schema from "@cms/db/drizzle/schema/schema";
 
 /**
