@@ -1,17 +1,24 @@
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
-import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
+import type { DB } from "better-auth/adapters/drizzle";
+import type { Env } from "../lib/env";
+import * as AuthSchema from "@cms/db/auth-schema"
 
-export const auth = (env: CloudflareBindings): ReturnType<typeof betterAuth> => {
-    const client = postgres(env.CloudflareBindings);
-    const db = drizzle(client)
+type AuthEnv = Pick<Env, "APP_NAME" | "APP_ORIGIN" | "BETTER_AUTH_SECRET">
+
+export function createAuth (env: AuthEnv, db: DB): ReturnType<typeof betterAuth> {
+
+    const appUrl = new URL(env.APP_ORIGIN);
+    const rpID = appUrl.hostname;
+
 
     return betterAuth({
-          database: drizzleAdapter(db, { provider: 'pg'}),  // schema is required in order for bettter-auth to recognize
-          baseURL: env.BETTER_AUTH_URL,
-          secret: env.BETTER_AUTH_SECRET,
-          emailAndPassword: { enabled: true },
-          magicLink: { enabled: true }
+        baseURL: `${env.APP_ORIGIN}/api/auth`,
+        trustedOrigins: [env.APP_ORIGIN],
+        secret: env.BETTER_AUTH_SECRET,
+        emailAndPassword: { enabled: true },
+        magicLink: { enabled: true },
+        database: drizzleAdapter(db, { provider: 'pg', schema: AuthSchema}),  // schema is required in order for bettter-auth to recognize
     })
 };

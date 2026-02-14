@@ -16,11 +16,8 @@ const app = new Hono<{
 }>()
 
 .get("/all", async (c) => {
-    console.log('getting database')
-    console.log(c)
     const db = createDb(c.env.HYPERDRIVE_DIRECT)
     console.log('db established')
-    console.log(c.var)
     const query = await db.select().from(schema.collections)
     if (!query || query.length === 0) {return c.json({error:"No collections found", success:false}, 404)}
     console.log('query successful')
