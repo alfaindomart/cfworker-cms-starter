@@ -1,0 +1,51 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "cfworker-cms-starter",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "compatibility_date": "2026-02-11",
+  "main": "./worker.ts",
+  "observability": {
+    "enabled": true
+  },
+  // [ENV:PRODUCTION]
+  // Command: bun wrangler deploy
+  "vars": {
+    "ENVIRONMENT": "production",
+    "APP_NAME": "api-prod",
+    // "APP_ORIGIN": "https://example.com",
+    // "ALLOWED_ORIGINS": "https://example.com",
+    // "RESEND_EMAIL_FROM": "onboarding@resend.dev"
+  },
+  // prettier-ignore
+  "hyperdrive": [
+    { "binding": "HYPERDRIVE_CACHED", "id": "bf0c326b9c0c43cda417f552469ac67d" },
+    { "binding": "HYPERDRIVE_DIRECT", "id": "3be9497ddcdb4102acf1a2aeac258e03" }
+  ],
+  "kv_namespaces": [],
+  "env": {
+    "dev": {
+      "vars": {
+        "ENVIRONMENT": "development",
+        "APP_NAME": "api-dev",
+        "APP_ORIGIN": "http://localhost:5173",
+        "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173"
+      },
+      // prettier-ignore
+      "hyperdrive": [
+        { "binding": "HYPERDRIVE_CACHED", "id": "281c1ee9219742f7ad3a72b4b6f62f9d" },
+        { "binding": "HYPERDRIVE_DIRECT", "id": "72eb2ad395054ead9b13e9e22d78a917" },
+      ],
+      "kv_namespaces": []
+      }
+  }
+  // "d1_databases": [
+  //   {
+  //     "binding": "DB",
+  //     "database_name": "cfworker-cms-db",
+  //     "database_id": "63a0cf97-6ccd-46ed-ab83-af469f234369",
+  //     "migrations_dir": "./drizzle/migrations"
+  //   }
+  // ]
+}

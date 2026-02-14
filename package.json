@@ -1,33 +1,26 @@
 {
-  "name": "cfworker-cms-starter",
+  "name": "@cms/root",
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "db"
+  ],
   "scripts": {
-    "dev": "vite",
+    "dev:api": "npm run dev --workspace=@cms/api",
     "build": "vite build",
     "preview": "$npm_execpath run build && vite preview",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "npm run db:generate --workspace=@cms/db",
+    "db:migrate": "npm run db:migrate --workspace=@cms/db",
     "deploy": "$npm_execpath run build && wrangler deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
-  },
-  "dependencies": {
-    "@hono/zod-validator": "^0.7.6",
-    "better-auth": "^1.4.17",
-    "dotenv": "^17.2.3",
-    "drizzle-orm": "^0.45.1",
-    "drizzle-seed": "^0.3.1",
-    "drizzle-zod": "^0.8.3",
-    "hono": "^4.10.7",
-    "postgres": "^3.4.8",
-    "zod": "^4.3.6"
+    "cf-typegen:api": "npm run cf-typegen --workspace=@cms/api"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.2.3",
     "@types/node": "^24.10.1",
     "drizzle-kit": "^0.31.8",
     "tsx": "^4.21.0",
-    "vite": "^6.3.5",
+    "vite": "~7.3.0",
     "vite-ssr-components": "^0.5.1",
-    "wrangler": "^4.53.0"
+    "wrangler": "^4.54.0"
   }
 }

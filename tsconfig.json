@@ -10,7 +10,7 @@
     ],
     "types": [
       "vite/client",
-      "./worker-configuration.d.ts"
+      "./apps/api/worker-configuration.d.ts"
     ],
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx"
