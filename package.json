@@ -9,8 +9,11 @@
     "dev:api": "npm run dev --workspace=@cms/api",
     "build": "vite build",
     "preview": "$npm_execpath run build && vite preview",
-    "db:generate": "npm run db:generate --workspace=@cms/db",
-    "db:migrate": "npm run db:migrate --workspace=@cms/db",
+    "db:generate-dev": "npm run db:generate-dev --workspace=@cms/db",
+    "db:migrate-dev": "npm run db:migrate-dev --workspace=@cms/db",
+    "db:generate-prod": "npm run db:generate-prod --workspace=@cms/db",
+    "db:migrate-prod": "npm run db:migrate-prod --workspace=@cms/db",
+    "db:seed": "npm run db:seed --workspace=@cms/db",
     "deploy": "$npm_execpath run build && wrangler deploy",
     "cf-typegen:api": "npm run cf-typegen --workspace=@cms/api"
   },

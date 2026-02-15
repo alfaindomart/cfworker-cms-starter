@@ -1,17 +1,19 @@
-import {seed} from 'drizzle-seed'
+import {seed, reset} from 'drizzle-seed'
 import {drizzle} from 'drizzle-orm/postgres-js'
 import { config } from 'dotenv';
 import postgres from 'postgres';
-import * as schema from './drizzle/schema/schema'
+// import * as userSchema from './drizzle/schema/user'
+import * as othersSchema from './drizzle/schema/others'
+import {users} from "./drizzle/schema/user";
 
 seedDatabase()
 
 async function seedDatabase() {
   try {
     if (process.env.ENVIRONMENT === "production") {
-      config({ path: "./.prod.vars" });
+      config({ path: "../.prod.vars" });
     } else {
-      config({ path: "./.dev.vars" });
+      config({ path: "../.dev.vars" });
     }
 
     const DATABASE_URL = process.env.DATABASE_URL;
@@ -30,7 +32,9 @@ async function seedDatabase() {
     });
 
     // Read more about seeding here: https://orm.drizzle.team/docs/seed-overview#drizzle-seed
-    await seed(db, schema);
+    // await seed(db, userSchema);
+    // console.log("✅ User schema seeded successfully!");
+    await seed(db, {othersSchema, users});
     console.log("✅ Database seeded successfully!");
   } catch (error) {
     console.error("❌ Error during seeding:", error);
