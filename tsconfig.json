@@ -1,18 +1,9 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "skipLibCheck": true,
-    "lib": [
-      "ESNext"
-    ],
-    "types": [
-      "vite/client",
-      "./apps/api/worker-configuration.d.ts"
-    ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
-  },
+  "files": [],
+  "references": [
+    { "path": "./apps/dashboard" },
+    { "path": "./apps/api" },
+    { "path": "./db" },
+    { "path": "./packages/core" },
+  ]
 }

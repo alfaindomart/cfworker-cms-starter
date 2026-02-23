@@ -1,17 +1,28 @@
 {
-  "files": [],
+  "extends": "../../packages/typescript-config/react.jsonc",
   "references": [
     {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
+      "path": "../api"
     }
   ],
   "compilerOptions": {
+    "noEmit": true,
+    "tsBuildInfoFile": "../../.cache/tsconfig/web.tsbuildinfo",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "@cms/api": ["../api"],
+      "@cms/api/*": ["../api/*"],
+      "@cms/core": ["../../packages/core"],
+      "@cms/core/*": ["../../packages/core/*"],
+      "@cms/db": ["../../db"],
+      "@cms/db/*": ["../../db/*"],
+      // "@cms/ui": ["../../packages/ui"],
+      // "@cms/ui/*": ["../../packages/ui/*"],
+      // "@cms/ws-protocol": ["../../packages/ws-protocol"],
+      // "@cms/ws-protocol/*": ["../../packages/ws-protocol/*"]
     }
-  }
+  },
+    "include": ["**/*.ts", "**/*.tsx", "**/*.json", "./global.d.ts"],
+  "exclude": ["**/dist/**/*", "**/node_modules/**/*"],
 }

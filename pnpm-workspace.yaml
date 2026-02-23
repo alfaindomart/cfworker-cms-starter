@@ -1,0 +1,8 @@
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - workerd
+packages:
+  - "apps/*"
+  - "db"
+  - "packages/*"

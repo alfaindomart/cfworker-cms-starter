@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+        "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "vite/client",
+      "./apps/api/worker-configuration.d.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+
+    "baseUrl": "../../",
+    "paths": {
+        "@cms/api": ["apps/api/src"],
+        "@cms/api/*": ["apps/api/src/*"],
+        "@cms/dashboard": ["apps/dashboard/src"],
+        "@cms/dashboard/*": ["apps/dashboard/src/*"],
+        "@cms/db": ["db/src"],
+        "@cms/db/*": ["db/src/*"],
+    },
+        "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
+    "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+        "useDefineForClassFields": true,
+  },
+}

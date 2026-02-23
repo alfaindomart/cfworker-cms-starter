@@ -1,9 +1,12 @@
 {
   "name": "@cms/dashboard",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
     "preview": "$npm_execpath run build && vite preview",
     "deploy": "$npm_execpath run build && wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
@@ -66,6 +69,7 @@
 
   },
   "devDependencies": {
+    "@cms/typescript-config": "workspace:*",
     "@cloudflare/vite-plugin": "^1.2.3",
     "@tanstack/eslint-plugin-query": "^5.91.4",
     "@tanstack/react-query-devtools": "^5.91.2",
