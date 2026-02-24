@@ -1,6 +1,6 @@
 import { auth } from "@/lib/auth";
 import { sessionQueryKey } from "@/lib/queries/session";
-import { Button } from "@repo/ui";
+import { Button } from "@cms/ui";
 import { useQueryClient } from "@tanstack/react-query";
 import { useCallback, useState } from "react";
 

@@ -1,4 +1,4 @@
-import { Button } from "@repo/ui";
+import { Button } from "@cms/ui";
 import { Menu, Settings, X } from "lucide-react";
 
 interface HeaderProps {

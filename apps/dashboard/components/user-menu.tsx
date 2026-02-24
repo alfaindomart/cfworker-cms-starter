@@ -1,5 +1,5 @@
 import { signOut, useSessionQuery } from "@/lib/queries/session";
-import { Avatar, AvatarFallback, Button } from "@repo/ui";
+import { Avatar, AvatarFallback, Button } from "@cms/ui";
 import { useQueryClient } from "@tanstack/react-query";
 import { LogOut, RefreshCw, User } from "lucide-react";
 

@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
   Input,
-} from "@repo/ui";
+} from "@cms/ui";
 import { createFileRoute } from "@tanstack/react-router";
 import {
   MoreVertical,

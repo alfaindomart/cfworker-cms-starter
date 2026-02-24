@@ -1,9 +1,7 @@
 {
   "extends": "../../packages/typescript-config/react.jsonc",
   "references": [
-    {
-      "path": "../api"
-    }
+    {"path": "../api"}, {"path": "../../packages/ui"}
   ],
   "compilerOptions": {
     "noEmit": true,
@@ -17,8 +15,8 @@
       "@cms/core/*": ["../../packages/core/*"],
       "@cms/db": ["../../db"],
       "@cms/db/*": ["../../db/*"],
-      // "@cms/ui": ["../../packages/ui"],
-      // "@cms/ui/*": ["../../packages/ui/*"],
+      "@cms/ui": ["../../packages/ui"],
+      "@cms/ui/*": ["../../packages/ui/*"]
       // "@cms/ws-protocol": ["../../packages/ws-protocol"],
       // "@cms/ws-protocol/*": ["../../packages/ws-protocol/*"]
     }

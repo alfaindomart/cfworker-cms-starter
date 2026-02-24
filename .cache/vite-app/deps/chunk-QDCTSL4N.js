@@ -22,28 +22,16 @@ import {
   untrack,
   useContext,
   useDevtoolsOnClose
-} from "./chunk-JMDN337W.js";
+} from "./chunk-HUYNP2OI.js";
 import {
   interpolatePath,
   invariant,
   rootRouteId,
   trimPath
 } from "./chunk-3NIPJJA4.js";
-
-// ../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-function r(e2) {
-  var t2, f, n2 = "";
-  if ("string" == typeof e2 || "number" == typeof e2) n2 += e2;
-  else if ("object" == typeof e2) if (Array.isArray(e2)) {
-    var o2 = e2.length;
-    for (t2 = 0; t2 < o2; t2++) e2[t2] && (f = r(e2[t2])) && (n2 && (n2 += " "), n2 += f);
-  } else for (f in e2) e2[f] && (n2 && (n2 += " "), n2 += f);
-  return n2;
-}
-function clsx() {
-  for (var e2, t2, f = 0, n2 = "", o2 = arguments.length; f < o2; f++) (e2 = arguments[f]) && (t2 = r(e2)) && (n2 && (n2 += " "), n2 += t2);
-  return n2;
-}
+import {
+  clsx
+} from "./chunk-TDJ3OFFR.js";
 
 // ../../node_modules/.pnpm/goober@2.1.18_csstype@3.2.3/node_modules/goober/dist/goober.modern.js
 var e = { data: "" };
@@ -58,52 +46,52 @@ var l = /(?:([\u0080-\uFFFF\w-%@]+) *:? *([^{;]+?);|([^;}{]*?) *{)|(}\s*)/g;
 var a = /\/\*[^]*?\*\/|  +/g;
 var n = /\n+/g;
 var o = (e2, t2) => {
-  let r2 = "", l2 = "", a2 = "";
+  let r = "", l2 = "", a2 = "";
   for (let n2 in e2) {
     let c2 = e2[n2];
-    "@" == n2[0] ? "i" == n2[1] ? r2 = n2 + " " + c2 + ";" : l2 += "f" == n2[1] ? o(c2, n2) : n2 + "{" + o(c2, "k" == n2[1] ? "" : t2) + "}" : "object" == typeof c2 ? l2 += o(c2, t2 ? t2.replace(/([^,])+/g, (e3) => n2.replace(/([^,]*:\S+\([^)]*\))|([^,])+/g, (t3) => /&/.test(t3) ? t3.replace(/&/g, e3) : e3 ? e3 + " " + t3 : t3)) : n2) : null != c2 && (n2 = /^--/.test(n2) ? n2 : n2.replace(/[A-Z]/g, "-$&").toLowerCase(), a2 += o.p ? o.p(n2, c2) : n2 + ":" + c2 + ";");
+    "@" == n2[0] ? "i" == n2[1] ? r = n2 + " " + c2 + ";" : l2 += "f" == n2[1] ? o(c2, n2) : n2 + "{" + o(c2, "k" == n2[1] ? "" : t2) + "}" : "object" == typeof c2 ? l2 += o(c2, t2 ? t2.replace(/([^,])+/g, (e3) => n2.replace(/([^,]*:\S+\([^)]*\))|([^,])+/g, (t3) => /&/.test(t3) ? t3.replace(/&/g, e3) : e3 ? e3 + " " + t3 : t3)) : n2) : null != c2 && (n2 = /^--/.test(n2) ? n2 : n2.replace(/[A-Z]/g, "-$&").toLowerCase(), a2 += o.p ? o.p(n2, c2) : n2 + ":" + c2 + ";");
   }
-  return r2 + (t2 && a2 ? t2 + "{" + a2 + "}" : a2) + l2;
+  return r + (t2 && a2 ? t2 + "{" + a2 + "}" : a2) + l2;
 };
 var c = {};
 var s = (e2) => {
   if ("object" == typeof e2) {
     let t2 = "";
-    for (let r2 in e2) t2 += r2 + s(e2[r2]);
+    for (let r in e2) t2 += r + s(e2[r]);
     return t2;
   }
   return e2;
 };
-var i = (e2, t2, r2, i2, p2) => {
+var i = (e2, t2, r, i2, p2) => {
   let u2 = s(e2), d = c[u2] || (c[u2] = ((e3) => {
-    let t3 = 0, r3 = 11;
-    for (; t3 < e3.length; ) r3 = 101 * r3 + e3.charCodeAt(t3++) >>> 0;
-    return "go" + r3;
+    let t3 = 0, r2 = 11;
+    for (; t3 < e3.length; ) r2 = 101 * r2 + e3.charCodeAt(t3++) >>> 0;
+    return "go" + r2;
   })(u2));
   if (!c[d]) {
     let t3 = u2 !== e2 ? e2 : ((e3) => {
-      let t4, r3, o2 = [{}];
-      for (; t4 = l.exec(e3.replace(a, "")); ) t4[4] ? o2.shift() : t4[3] ? (r3 = t4[3].replace(n, " ").trim(), o2.unshift(o2[0][r3] = o2[0][r3] || {})) : o2[0][t4[1]] = t4[2].replace(n, " ").trim();
+      let t4, r2, o2 = [{}];
+      for (; t4 = l.exec(e3.replace(a, "")); ) t4[4] ? o2.shift() : t4[3] ? (r2 = t4[3].replace(n, " ").trim(), o2.unshift(o2[0][r2] = o2[0][r2] || {})) : o2[0][t4[1]] = t4[2].replace(n, " ").trim();
       return o2[0];
     })(e2);
-    c[d] = o(p2 ? { ["@keyframes " + d]: t3 } : t3, r2 ? "" : "." + d);
+    c[d] = o(p2 ? { ["@keyframes " + d]: t3 } : t3, r ? "" : "." + d);
   }
-  let f = r2 && c.g ? c.g : null;
-  return r2 && (c.g = c[d]), ((e3, t3, r3, l2) => {
-    l2 ? t3.data = t3.data.replace(l2, e3) : -1 === t3.data.indexOf(e3) && (t3.data = r3 ? e3 + t3.data : t3.data + e3);
+  let f = r && c.g ? c.g : null;
+  return r && (c.g = c[d]), ((e3, t3, r2, l2) => {
+    l2 ? t3.data = t3.data.replace(l2, e3) : -1 === t3.data.indexOf(e3) && (t3.data = r2 ? e3 + t3.data : t3.data + e3);
   })(c[d], t2, i2, f), d;
 };
-var p = (e2, t2, r2) => e2.reduce((e3, l2, a2) => {
+var p = (e2, t2, r) => e2.reduce((e3, l2, a2) => {
   let n2 = t2[a2];
   if (n2 && n2.call) {
-    let e4 = n2(r2), t3 = e4 && e4.props && e4.props.className || /^go/.test(e4) && e4;
+    let e4 = n2(r), t3 = e4 && e4.props && e4.props.className || /^go/.test(e4) && e4;
     n2 = t3 ? "." + t3 : e4 && "object" == typeof e4 ? e4.props ? "" : o(e4, "") : false === e4 ? "" : e4;
   }
   return e3 + l2 + (null == n2 ? "" : n2);
 }, "");
 function u(e2) {
-  let r2 = this || {}, l2 = e2.call ? e2(r2.p) : e2;
-  return i(l2.unshift ? l2.raw ? p(l2, [].slice.call(arguments, 1), r2.p) : l2.reduce((e3, t2) => Object.assign(e3, t2 && t2.call ? t2(r2.p) : t2), {}) : l2, t(r2.target), r2.g, r2.o, r2.k);
+  let r = this || {}, l2 = e2.call ? e2(r.p) : e2;
+  return i(l2.unshift ? l2.raw ? p(l2, [].slice.call(arguments, 1), r.p) : l2.reduce((e3, t2) => Object.assign(e3, t2 && t2.call ? t2(r.p) : t2), {}) : l2, t(r.target), r.g, r.o, r.k);
 }
 var b = u.bind({ g: 1 });
 var h = u.bind({ k: 1 });
@@ -1401,9 +1389,9 @@ function RouteComp({
     try {
       if (match()?.params) {
         const p2 = match()?.params;
-        const r2 = route.path || trimPath(route.id);
-        if (r2.startsWith("$")) {
-          const trimmed = r2.slice(1);
+        const r = route.path || trimPath(route.id);
+        if (r.startsWith("$")) {
+          const trimmed = r.slice(1);
           if (p2[trimmed]) {
             return `(${p2[trimmed]})`;
           }
@@ -1477,10 +1465,10 @@ function RouteComp({
         var _el$10 = _tmpl$6();
         insert(_el$10, () => [...route.children].sort((a2, b2) => {
           return a2.rank - b2.rank;
-        }).map((r2) => createComponent(RouteComp, {
+        }).map((r) => createComponent(RouteComp, {
           routerState,
           router,
-          route: r2,
+          route: r,
           activeId,
           setActiveId
         })));
@@ -2041,11 +2029,10 @@ var BaseTanStackRouterDevtoolsPanel$1 = Object.freeze(Object.defineProperty({
 }, Symbol.toStringTag, { value: "Module" }));
 
 export {
-  clsx,
   useIsMounted,
   useStyles$1,
   useLocalStorage,
   BaseTanStackRouterDevtoolsPanel,
   BaseTanStackRouterDevtoolsPanel$1
 };
-//# sourceMappingURL=chunk-DGMUF67J.js.map
+//# sourceMappingURL=chunk-QDCTSL4N.js.map

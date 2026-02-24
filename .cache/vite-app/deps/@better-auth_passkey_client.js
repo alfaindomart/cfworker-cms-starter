@@ -2,7 +2,7 @@ import "./chunk-EGRHWZRV.js";
 import {
   atom,
   useAuthQuery
-} from "./chunk-MNLFJTZ6.js";
+} from "./chunk-CMPJUWQX.js";
 import "./chunk-JLKGKI2U.js";
 import "./chunk-G3PMV62Z.js";
 
@@ -425,7 +425,7 @@ async function startAuthentication(options) {
   };
 }
 
-// ../../node_modules/.pnpm/@better-auth+passkey@1.4.18_@better-auth+core@1.4.18_@better-auth+utils@0.3.0_@better-f_d0d2718353143fc7b545ea8c5b91bcd0/node_modules/@better-auth/passkey/dist/client.mjs
+// ../../node_modules/.pnpm/@better-auth+passkey@1.4.18_@better-auth+core@1.4.18_@better-auth+utils@0.3.0_@better-f_1e9da6290195222e57b9b41913ab5746/node_modules/@better-auth/passkey/dist/client.mjs
 var getPasskeyActions = ($fetch, { $listPasskeys, $store }) => {
   const signInPasskey = async (opts, options) => {
     const response = await $fetch("/passkey/generate-authenticate-options", {

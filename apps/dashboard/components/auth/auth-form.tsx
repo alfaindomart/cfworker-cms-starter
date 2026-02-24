@@ -1,4 +1,4 @@
-import { Button, Input, cn } from "@repo/ui";
+import { Button, Input, cn } from "@cms/ui";
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, Mail } from "lucide-react";
 import type { ComponentProps, FormEvent } from "react";

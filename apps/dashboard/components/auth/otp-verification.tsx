@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { Button, Input } from "@repo/ui";
+import { Button, Input } from "@cms/ui";
 import type { FormEvent } from "react";
 import { useCallback, useEffect, useState } from "react";
 

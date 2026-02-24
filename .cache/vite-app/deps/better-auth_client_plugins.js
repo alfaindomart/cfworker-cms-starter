@@ -3,11 +3,11 @@ import {
   BetterAuthError,
   atom,
   useAuthQuery
-} from "./chunk-MNLFJTZ6.js";
+} from "./chunk-CMPJUWQX.js";
 import "./chunk-JLKGKI2U.js";
 import "./chunk-G3PMV62Z.js";
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/additional-fields/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/additional-fields/client.mjs
 var inferAdditionalFields = (schema) => {
   return {
     id: "additional-fields-client",
@@ -15,7 +15,7 @@ var inferAdditionalFields = (schema) => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/access/access.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/access/access.mjs
 function role(statements) {
   return {
     authorize(request, connector = "AND") {
@@ -56,7 +56,7 @@ function createAccessControl(s) {
   };
 }
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/admin/access/statement.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/admin/access/statement.mjs
 var defaultStatements = {
   user: [
     "create",
@@ -103,7 +103,7 @@ var defaultRoles = {
   user: userAc
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/admin/has-permission.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/admin/has-permission.mjs
 var hasPermission = (input) => {
   if (input.userId && input.options?.adminUserIds?.includes(input.userId)) return true;
   if (!input.permissions && !input.permission) return false;
@@ -113,7 +113,7 @@ var hasPermission = (input) => {
   return false;
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/admin/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/admin/client.mjs
 var adminClient = (options) => {
   const roles = {
     admin: adminAc,
@@ -140,7 +140,7 @@ var adminClient = (options) => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/anonymous/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/anonymous/client.mjs
 var anonymousClient = () => {
   return {
     id: "anonymous",
@@ -156,7 +156,7 @@ var anonymousClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/api-key/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/api-key/client.mjs
 var apiKeyClient = () => {
   return {
     id: "api-key",
@@ -169,7 +169,7 @@ var apiKeyClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/client/plugins/infer-plugin.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/client/plugins/infer-plugin.mjs
 var InferServerPlugin = () => {
   return {
     id: "infer-server-plugin",
@@ -177,12 +177,12 @@ var InferServerPlugin = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/custom-session/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/custom-session/client.mjs
 var customSessionClient = () => {
   return InferServerPlugin();
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/device-authorization/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/device-authorization/client.mjs
 var deviceAuthorizationClient = () => {
   return {
     id: "device-authorization",
@@ -197,7 +197,7 @@ var deviceAuthorizationClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/email-otp/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/email-otp/client.mjs
 var emailOTPClient = () => {
   return {
     id: "email-otp",
@@ -209,7 +209,7 @@ var emailOTPClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/generic-oauth/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/generic-oauth/client.mjs
 var genericOAuthClient = () => {
   return {
     id: "generic-oauth-client",
@@ -217,7 +217,7 @@ var genericOAuthClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/jwt/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/jwt/client.mjs
 var jwtClient = (options) => {
   const jwksPath = options?.jwks?.jwksPath ?? "/jwks";
   return {
@@ -233,7 +233,7 @@ var jwtClient = (options) => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/last-login-method/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/last-login-method/client.mjs
 function getCookieValue(name) {
   if (typeof document === "undefined") return null;
   const cookie = document.cookie.split("; ").find((row) => row.startsWith(`${name}=`));
@@ -259,7 +259,7 @@ var lastLoginMethodClient = (config = {}) => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/magic-link/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/magic-link/client.mjs
 var magicLinkClient = () => {
   return {
     id: "magic-link",
@@ -267,7 +267,7 @@ var magicLinkClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/multi-session/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/multi-session/client.mjs
 var multiSessionClient = () => {
   return {
     id: "multi-session",
@@ -281,7 +281,7 @@ var multiSessionClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/oidc-provider/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/oidc-provider/client.mjs
 var oidcClient = () => {
   return {
     id: "oidc-client",
@@ -289,7 +289,7 @@ var oidcClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/one-tap/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/one-tap/client.mjs
 var isRequestInProgress = null;
 function isFedCMSupported() {
   return typeof window !== "undefined" && "IdentityCredential" in window;
@@ -496,7 +496,7 @@ var loadGoogleScript = () => {
   });
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/one-time-token/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/one-time-token/client.mjs
 var oneTimeTokenClient = () => {
   return {
     id: "one-time-token",
@@ -504,7 +504,7 @@ var oneTimeTokenClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/organization/access/statement.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/organization/access/statement.mjs
 var defaultStatements2 = {
   organization: ["update", "delete"],
   member: [
@@ -579,7 +579,7 @@ var defaultRoles2 = {
   member: memberAc
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/organization/permission.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/organization/permission.mjs
 var hasPermissionFn = (input, acRoles) => {
   if (!input.permissions && !input.permission) return false;
   const roles = input.role.split(",");
@@ -591,7 +591,7 @@ var hasPermissionFn = (input, acRoles) => {
   return false;
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/organization/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/organization/client.mjs
 var clientSideHasPermission = (input) => {
   return hasPermissionFn(input, input.options.roles || defaultRoles2);
 };
@@ -683,7 +683,7 @@ var inferOrgAdditionalFields = (schema) => {
   return {};
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/phone-number/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/phone-number/client.mjs
 var phoneNumberClient = () => {
   return {
     id: "phoneNumber",
@@ -697,7 +697,7 @@ var phoneNumberClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/siwe/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/siwe/client.mjs
 var siweClient = () => {
   return {
     id: "siwe",
@@ -705,7 +705,7 @@ var siweClient = () => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/two-factor/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/two-factor/client.mjs
 var twoFactorClient = (options) => {
   return {
     id: "two-factor",
@@ -736,7 +736,7 @@ var twoFactorClient = (options) => {
   };
 };
 
-// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/plugins/username/client.mjs
+// ../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@cloudflare+workers-types@4.20_171d4cf48417d2be983bd707ab3fde51/node_modules/better-auth/dist/plugins/username/client.mjs
 var usernameClient = () => {
   return {
     id: "username",

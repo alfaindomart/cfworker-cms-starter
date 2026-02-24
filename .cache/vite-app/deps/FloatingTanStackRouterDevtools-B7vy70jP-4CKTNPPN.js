@@ -1,10 +1,9 @@
 import {
   BaseTanStackRouterDevtoolsPanel,
-  clsx,
   useIsMounted,
   useLocalStorage,
   useStyles$1
-} from "./chunk-DGMUF67J.js";
+} from "./chunk-QDCTSL4N.js";
 import {
   DevtoolsOnCloseContext,
   Dynamic,
@@ -20,8 +19,11 @@ import {
   setAttribute,
   spread,
   template
-} from "./chunk-JMDN337W.js";
+} from "./chunk-HUYNP2OI.js";
 import "./chunk-3NIPJJA4.js";
+import {
+  clsx
+} from "./chunk-TDJ3OFFR.js";
 import "./chunk-G3PMV62Z.js";
 
 // ../../node_modules/.pnpm/@tanstack+router-devtools-core@1.162.2_@tanstack+router-core@1.162.2_csstype@3.2.3/node_modules/@tanstack/router-devtools-core/dist/FloatingTanStackRouterDevtools-B7vy70jP.js
@@ -302,4 +304,4 @@ export {
   FloatingTanStackRouterDevtools,
   FloatingTanStackRouterDevtools as default
 };
-//# sourceMappingURL=FloatingTanStackRouterDevtools-B7vy70jP-XZMWMAZW.js.map
+//# sourceMappingURL=FloatingTanStackRouterDevtools-B7vy70jP-4CKTNPPN.js.map

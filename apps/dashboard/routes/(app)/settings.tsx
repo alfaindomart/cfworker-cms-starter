@@ -9,7 +9,7 @@ import {
   Label,
   Separator,
   Switch,
-} from "@repo/ui";
+} from "@cms/ui";
 import { createFileRoute } from "@tanstack/react-router";
 import { Bell, Palette, Shield, User } from "lucide-react";
 

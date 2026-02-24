@@ -10,7 +10,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@repo/ui";
+} from "@cms/ui";
 import { createFileRoute } from "@tanstack/react-router";
 import { Calendar, Download, FileText, Filter } from "lucide-react";
 

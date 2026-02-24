@@ -1,4 +1,4 @@
-# @repo/ui
+# @cms/ui
 
 Reusable UI components for the React Starter Kit monorepo. Built with React 19, TypeScript, and Tailwind CSS because we believe in using components that actually work.
 
@@ -27,7 +27,7 @@ bun install
 Components use Tailwind classes with the `cn()` utility for conditional styling:
 
 ```typescript
-import { cn } from "@repo/ui";
+import { cn } from "@cms/ui";
 
 function Card({ className, ...props }: CardProps) {
   return (
@@ -45,7 +45,7 @@ function Card({ className, ...props }: CardProps) {
 ## Usage
 
 ```typescript
-import { Button, Card, Input, cn } from "@repo/ui";
+import { Button, Card, Input, cn } from "@cms/ui";
 
 function MyComponent() {
   return (
@@ -74,14 +74,14 @@ packages/ui/
 ### Barrel Imports (Easy Mode)
 
 ```typescript
-import { Button, Card, Input, cn } from "@repo/ui";
+import { Button, Card, Input, cn } from "@cms/ui";
 ```
 
 ### Direct Imports (Better for tree-shaking)
 
 ```typescript
-import { Button } from "@repo/ui/components/button";
-import { cn } from "@repo/ui/lib/utils";
+import { Button } from "@cms/ui/components/button";
+import { cn } from "@cms/ui/lib/utils";
 ```
 
 Modern bundlers handle tree-shaking automatically, but direct imports guarantee minimal bundle size if you're obsessive about performance.
@@ -156,8 +156,8 @@ Consuming apps **must** include UI package paths in their Tailwind CSS v4 config
 {
   "compilerOptions": {
     "paths": {
-      "@repo/ui": ["../../packages/ui"],
-      "@repo/ui/*": ["../../packages/ui/*"]
+      "@cms/ui": ["../../packages/ui"],
+      "@cms/ui/*": ["../../packages/ui/*"]
     }
   }
 }
@@ -226,7 +226,7 @@ Components use `@/` aliases internally:
 import { cn } from "@/lib/utils";
 
 // External apps import
-import { Button } from "@repo/ui";
+import { Button } from "@cms/ui";
 ```
 
 This keeps internal imports clean while maintaining external compatibility.

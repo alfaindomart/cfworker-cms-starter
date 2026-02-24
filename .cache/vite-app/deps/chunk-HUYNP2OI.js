@@ -1634,7 +1634,7 @@ var TanStackRouterDevtoolsCore = class {
       if (this.#Component) {
         Devtools = this.#Component;
       } else {
-        Devtools = lazy(() => import("./FloatingTanStackRouterDevtools-B7vy70jP-XZMWMAZW.js"));
+        Devtools = lazy(() => import("./FloatingTanStackRouterDevtools-B7vy70jP-4CKTNPPN.js"));
         this.#Component = Devtools;
       }
       return createComponent(ShadowDomTargetContext.Provider, {
@@ -1726,7 +1726,7 @@ var TanStackRouterDevtoolsPanelCore = class {
       if (this.#Component) {
         BaseTanStackRouterDevtoolsPanel = this.#Component;
       } else {
-        BaseTanStackRouterDevtoolsPanel = lazy(() => import("./BaseTanStackRouterDevtoolsPanel-Bmws3ikM-IKV5AOT7.js").then((n) => n.c));
+        BaseTanStackRouterDevtoolsPanel = lazy(() => import("./BaseTanStackRouterDevtoolsPanel-Bmws3ikM-PLG5DANX.js").then((n) => n.c));
         this.#Component = BaseTanStackRouterDevtoolsPanel;
       }
       return createComponent(ShadowDomTargetContext.Provider, {
@@ -1822,4 +1822,4 @@ export {
   TanStackRouterDevtoolsCore,
   TanStackRouterDevtoolsPanelCore
 };
-//# sourceMappingURL=chunk-JMDN337W.js.map
+//# sourceMappingURL=chunk-HUYNP2OI.js.map

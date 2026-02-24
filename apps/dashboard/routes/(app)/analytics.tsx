@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@repo/ui";
+} from "@cms/ui";
 import { createFileRoute } from "@tanstack/react-router";
 import { Activity, DollarSign, TrendingUp, Users } from "lucide-react";
 
