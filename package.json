@@ -2,8 +2,8 @@
   "name": "@cms/root",
   "type": "module",
   "scripts": {
-    "dev:api": "npm run dev --workspace=@cms/api",
-    "dev:dashboard": "npm run dev --workspace=@cms/dashboard",
+    "dev:api": "pnpm --filter @cms/api run dev",
+    "dev:dashboard": "pnpm --filter @cms/dashboard run dev",
     "build": "vite build",
     "preview": "$npm_execpath run build && vite preview",
     "db:generate-dev": "npm run db:generate-dev --workspace=@cms/db",

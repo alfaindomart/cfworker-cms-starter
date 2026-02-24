@@ -1,0 +1,142 @@
+{
+  "hash": "8a719391",
+  "configHash": "d06997fc",
+  "lockfileHash": "967de4be",
+  "browserHash": "0194a62c",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../../node_modules/.pnpm/react@19.2.4/node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "954561d3",
+      "needsInterop": true
+    },
+    "@tanstack/react-query": {
+      "src": "../../../node_modules/.pnpm/@tanstack+react-query@5.90.21_react@19.2.4/node_modules/@tanstack/react-query/build/modern/index.js",
+      "file": "@tanstack_react-query.js",
+      "fileHash": "428e7c77",
+      "needsInterop": false
+    },
+    "@tanstack/react-query-devtools": {
+      "src": "../../../node_modules/.pnpm/@tanstack+react-query-devtools@5.91.3_@tanstack+react-query@5.90.21_react@19.2.4__react@19.2.4/node_modules/@tanstack/react-query-devtools/build/modern/index.js",
+      "file": "@tanstack_react-query-devtools.js",
+      "fileHash": "264d94cf",
+      "needsInterop": false
+    },
+    "@tanstack/react-router": {
+      "src": "../../../node_modules/.pnpm/@tanstack+react-router@1.162.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/@tanstack/react-router/dist/esm/index.dev.js",
+      "file": "@tanstack_react-router.js",
+      "fileHash": "4616da5c",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../../node_modules/.pnpm/react@19.2.4/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "0dd2bbfe",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../../node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "83428206",
+      "needsInterop": true
+    },
+    "@tanstack/react-router-devtools": {
+      "src": "../../../node_modules/.pnpm/@tanstack+react-router-devtools@1.162.4_@tanstack+react-router@1.162.4_react-dom@19.2.4_3b511744b7c4f225b592bc8895c23b09/node_modules/@tanstack/react-router-devtools/dist/esm/index.js",
+      "file": "@tanstack_react-router-devtools.js",
+      "fileHash": "f19ea73f",
+      "needsInterop": false
+    },
+    "zod": {
+      "src": "../../../node_modules/.pnpm/zod@4.3.6/node_modules/zod/index.js",
+      "file": "zod.js",
+      "fileHash": "6a02ba74",
+      "needsInterop": false
+    },
+    "@better-auth/passkey/client": {
+      "src": "../../../node_modules/.pnpm/@better-auth+passkey@1.4.18_@better-auth+core@1.4.18_@better-auth+utils@0.3.0_@better-f_d0d2718353143fc7b545ea8c5b91bcd0/node_modules/@better-auth/passkey/dist/client.mjs",
+      "file": "@better-auth_passkey_client.js",
+      "fileHash": "86168649",
+      "needsInterop": false
+    },
+    "better-auth/client/plugins": {
+      "src": "../../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/client/plugins/index.mjs",
+      "file": "better-auth_client_plugins.js",
+      "fileHash": "a692aef2",
+      "needsInterop": false
+    },
+    "better-auth/react": {
+      "src": "../../../node_modules/.pnpm/better-auth@1.4.18_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@types+pg@8.16.0_kysely@0.28.1_b87f67cc461bdc0197103db61a2dd465/node_modules/better-auth/dist/client/react/index.mjs",
+      "file": "better-auth_react.js",
+      "fileHash": "9c38d60a",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../../node_modules/.pnpm/lucide-react@0.562.0_react@19.2.4/node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "8b4d7100",
+      "needsInterop": false
+    },
+    "react-error-boundary": {
+      "src": "../../../node_modules/.pnpm/react-error-boundary@6.1.1_react@19.2.4/node_modules/react-error-boundary/dist/react-error-boundary.js",
+      "file": "react-error-boundary.js",
+      "fileHash": "155d91cf",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "FloatingTanStackRouterDevtools-B7vy70jP-XZMWMAZW": {
+      "file": "FloatingTanStackRouterDevtools-B7vy70jP-XZMWMAZW.js"
+    },
+    "B5PP2USH-6AMYNHOK": {
+      "file": "B5PP2USH-6AMYNHOK.js"
+    },
+    "WI32IQVE-RLANVVPS": {
+      "file": "WI32IQVE-RLANVVPS.js"
+    },
+    "chunk-VWVTCKCB": {
+      "file": "chunk-VWVTCKCB.js"
+    },
+    "BaseTanStackRouterDevtoolsPanel-Bmws3ikM-IKV5AOT7": {
+      "file": "BaseTanStackRouterDevtoolsPanel-Bmws3ikM-IKV5AOT7.js"
+    },
+    "chunk-DGMUF67J": {
+      "file": "chunk-DGMUF67J.js"
+    },
+    "chunk-KOBMWFK6": {
+      "file": "chunk-KOBMWFK6.js"
+    },
+    "chunk-DCDDSZDE": {
+      "file": "chunk-DCDDSZDE.js"
+    },
+    "chunk-JMDN337W": {
+      "file": "chunk-JMDN337W.js"
+    },
+    "chunk-EAJMFSUT": {
+      "file": "chunk-EAJMFSUT.js"
+    },
+    "chunk-3NIPJJA4": {
+      "file": "chunk-3NIPJJA4.js"
+    },
+    "chunk-V4HIJQKK": {
+      "file": "chunk-V4HIJQKK.js"
+    },
+    "chunk-ZKGZLFER": {
+      "file": "chunk-ZKGZLFER.js"
+    },
+    "chunk-5W7N3W2G": {
+      "file": "chunk-5W7N3W2G.js"
+    },
+    "chunk-EGRHWZRV": {
+      "file": "chunk-EGRHWZRV.js"
+    },
+    "chunk-MNLFJTZ6": {
+      "file": "chunk-MNLFJTZ6.js"
+    },
+    "chunk-JLKGKI2U": {
+      "file": "chunk-JLKGKI2U.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}

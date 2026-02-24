@@ -1,4 +1,4 @@
-import {tanstackRouter} from '@tanstack/router-plugin/vite';
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react-swc";
 import { TLSSocket } from "node:tls";
 import { URL, fileURLToPath } from "node:url";
@@ -8,9 +8,7 @@ import { defineProject } from "vitest/config";
 
 const publicEnvVars = [
   "APP_NAME",
-  "APP_ORIGIN",
-  "GOOGLE_CLOUD_PROJECT",
-  "GA_MEASUREMENT_ID",
+  "APP_ORIGIN"
 ];
 
 /**
