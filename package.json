@@ -1,16 +1,16 @@
 {
   "name": "@cms/root",
   "type": "module",
-  "workspaces": [
-    "apps/*",
-    "db"
-  ],
   "scripts": {
-    "dev:api": "npm run dev --workspace=@cms/api",
+    "dev:api": "pnpm --filter @cms/api run dev",
+    "dev:dashboard": "pnpm --filter @cms/dashboard run dev",
     "build": "vite build",
     "preview": "$npm_execpath run build && vite preview",
-    "db:generate": "npm run db:generate --workspace=@cms/db",
-    "db:migrate": "npm run db:migrate --workspace=@cms/db",
+    "db:generate-dev": "npm run db:generate-dev --workspace=@cms/db",
+    "db:migrate-dev": "npm run db:migrate-dev --workspace=@cms/db",
+    "db:generate-prod": "npm run db:generate-prod --workspace=@cms/db",
+    "db:migrate-prod": "npm run db:migrate-prod --workspace=@cms/db",
+    "db:seed": "npm run db:seed --workspace=@cms/db",
     "deploy": "$npm_execpath run build && wrangler deploy",
     "cf-typegen:api": "npm run cf-typegen --workspace=@cms/api"
   },
@@ -20,6 +20,7 @@
     "drizzle-kit": "^0.31.8",
     "tsx": "^4.21.0",
     "vite": "~7.3.0",
+    "vitest": "~4.0.16",
     "vite-ssr-components": "^0.5.1",
     "wrangler": "^4.54.0"
   }
