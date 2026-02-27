@@ -1,8 +1,9 @@
 import { betterAuth } from "better-auth";
+import {passkey} from "@better-auth/passkey"
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import postgres from "postgres";
 import type { DB } from "better-auth/adapters/drizzle";
-import type { Env } from "../lib/env";
+import type { Env } from "./env";
 import * as AuthSchema from "@cms/db/auth-schema"
 
 type AuthEnv = Pick<Env, "APP_NAME" | "APP_ORIGIN" | "BETTER_AUTH_SECRET">

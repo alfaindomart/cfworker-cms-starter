@@ -11,6 +11,7 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@better-auth/passkey": "^1.4.18",
     "@cms/db": "workspace:*",
     "@hono/zod-validator": "^0.7.6",
     "better-auth": "^1.4.17",
@@ -22,8 +23,8 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260101.0",
     "@cloudflare/vite-plugin": "^1.2.3",
+    "@cloudflare/workers-types": "^4.20260101.0",
     "@types/node": "^24.10.1",
     "@types/pg": "^8.16.0",
     "drizzle-kit": "^0.31.8",

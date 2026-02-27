@@ -5,7 +5,7 @@ import type { DBSchema } from "@cms/db";
 export type AppContext = {
   Bindings: Env;
   Variables: {
-    dbCache: PostgresJsDatabase<typeof DatabaseSchema>;
-    dbDirect: PostgresJsDatabase<typeof DatabaseSchema>;
+    dbCache: PostgresJsDatabase<DBSchema>;
+    dbDirect: PostgresJsDatabase<DBSchema>;
     }
 }

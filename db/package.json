@@ -11,6 +11,7 @@
     "db:seed": "tsx seed.ts"
   },
   "dependencies": {
+    "@cms/api": "workspace:*",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
     "drizzle-seed": "^0.3.1",
