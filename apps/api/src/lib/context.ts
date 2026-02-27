@@ -1,6 +1,6 @@
-import { Env } from "./env";
+import type { Env } from "./env";
 import type { PostgresJsDatabase } from "drizzle-orm/postgres-js";
-import * as DatabaseSchema from "@cms/db/drizzle/schema/schema";
+import type { DBSchema } from "@cms/db";
 
 export type AppContext = {
   Bindings: Env;

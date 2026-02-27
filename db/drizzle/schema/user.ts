@@ -11,7 +11,6 @@ import {
   varchar,
   index,
   unique
-  
 } from "drizzle-orm/pg-core";
 
 

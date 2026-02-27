@@ -11,6 +11,7 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@cms/db": "workspace:*",
     "@hono/zod-validator": "^0.7.6",
     "better-auth": "^1.4.17",
     "dotenv": "^17.2.3",

@@ -6,3 +6,5 @@ packages:
   - "apps/*"
   - "db"
   - "packages/*"
+
+link-workspace-packages: true
